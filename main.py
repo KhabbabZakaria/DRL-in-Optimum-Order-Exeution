@@ -142,7 +142,6 @@ def train():
 
                 A_hat = reward + gamma*next_Value - Value
                 #calculation of Policy and  Value Losses
-                #print('Lv', Lv)
                 state = next_state
                 price_time_plus_1 = price_time_plus_2
                 if left_time == 1 and env.already_bought>0:    #no more time left yet target left
